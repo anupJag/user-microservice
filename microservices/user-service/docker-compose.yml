@@ -1,0 +1,25 @@
+version: '3'
+services:
+  database:
+    image: 'mongo:latest'
+    container_name: 'mongodb-user-service'
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb-user:/data/db
+      - mongodb-user_config:/data/configdb
+  userservice:
+    container_name: audit-tool-user-service
+    ports:
+      - '3001:3001'
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    environment:
+      - USER_SERVICE_PORT=3001
+      - USER_DB_SERVICE=mongodb://database:27017/user-db
+    links:
+      - database
+volumes:
+  mongodb-user:
+  mongodb-user_config:

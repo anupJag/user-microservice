@@ -1,0 +1,26 @@
+/**
+ * Basic typography style for text
+ */
+
+@import "./font-family";
+
+@mixin font-style($font, $letter-spacing, $color) {
+  color: $color;
+  font: $font;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin font-h1-desktop($text-color, $font-family: $base-font-family) {
+  @include font-style(2rem/1 $font-family, 1px, $text-color);
+}
+
+@mixin font-h2-desktop($text-color, $font-family: $base-font-family) {
+  @include font-style(1rem/1 $font-family, 1px, $text-color);
+}
+
+@mixin font-h1-main-content(
+  $text-color,
+  $font-family: $content-header-font-family
+) {
+  @include font-style(1.75rem/1 $font-family, 0px, $text-color);
+}

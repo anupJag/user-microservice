@@ -1,0 +1,19 @@
+@import "../../../styles";
+@import "../../../styles/fonts";
+
+.ButtonBase-root {
+  font-size: $space-2;
+  text-transform: capitalize;
+  font-family: Roboto;
+  background: transparent;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  margin: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-1;
+}

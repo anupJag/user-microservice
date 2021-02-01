@@ -1,0 +1,6 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts/index";
+
+.wrapper_header {
+  @include font-h1-main-content($black);
+}

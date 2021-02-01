@@ -1,0 +1,28 @@
+@import "../../../styles/colors";
+
+.TablePagination-root {
+  min-height: 2.85rem;
+  padding: 0.125rem;
+  border-bottom: 1px solid $gray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.TablePagination-spacer {
+  flex: 1;
+}
+
+.TablePagination-toolbar {
+  display: flex;
+}
+
+.TablePagination-NavButton-root {
+  padding: 0.275rem !important;
+  min-width: 1.875rem !important;
+  margin: 0 0.3125rem;
+}
+
+.TablePagination-NavButton-default {
+  background-color: transparent !important;
+}

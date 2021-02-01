@@ -1,0 +1,488 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.left {
+  float: #{$left};
+}
+
+.right {
+  float: #{$right};
+}
+
+.text-left {
+  text-align: #{$left};
+}
+
+.text-right {
+  text-align: #{$right};
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-sub {
+  vertical-align: sub;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-25 {
+  width: 25%;
+}
+
+.width-33 {
+  width: 33.33%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.box-shadow-none {
+  box-shadow: none;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.word-break {
+  hyphens: auto;
+  word-break: break-word;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.no-border {
+  border: 0;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+.show {
+  display: inherit;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.25;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.block {
+  display: block;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  align-items: start;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-baseline {
+  align-items: baseline;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.flex-justify {
+  justify-content: space-between;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-first {
+  order: -1;
+}
+
+.flex-last {
+  order: 99999;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.white-fill {
+  fill: $white;
+}
+
+@include mobile {
+  .sm-width-50 {
+    width: 50%;
+  }
+
+  .sm-width-100 {
+    width: 100%;
+  }
+
+  .sm-width-auto {
+    width: auto;
+  }
+
+  .sm-flex {
+    display: flex;
+  }
+
+  .sm-flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  .sm-flex-grow {
+    flex: 1 0 auto;
+  }
+
+  .sm-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm-hide {
+    display: none;
+  }
+
+  .sm-inline {
+    display: inline;
+  }
+
+  .sm-block {
+    display: block;
+  }
+
+  .sm-inline-block {
+    display: inline-block;
+  }
+
+  .sm-absolute {
+    position: absolute;
+  }
+
+  .sm-relative {
+    position: relative;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-flex-justify {
+    justify-content: space-between;
+  }
+
+  .sm-flex-column {
+    flex-direction: column;
+  }
+
+  .sm-scroll-overflow {
+    overflow: scroll;
+  }
+
+  .sm-text-right {
+    text-align: right;
+  }
+}
+
+@include tablet {
+  .md-width-50 {
+    width: 50%;
+  }
+
+  .md-width-100 {
+    width: 100%;
+  }
+  .md-text-center {
+    text-align: center;
+  }
+
+  .md-text-right {
+    text-align: right;
+  }
+
+  .md-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md-flex {
+    display: flex;
+  }
+
+  .md-flex-justify-center {
+    justify-content: center;
+  }
+
+  .md-flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  .md-flex-grow {
+    flex: 1 0 auto;
+  }
+
+  .md-hide {
+    display: none;
+  }
+
+  .md-inline {
+    display: inline;
+  }
+
+  .md-block {
+    display: block;
+  }
+
+  .md-inline-block {
+    display: inline-block;
+  }
+
+  .md-inline-flex {
+    display: inline-flex;
+  }
+
+  .md-absolute {
+    position: absolute;
+  }
+
+  .md-relative {
+    position: relative;
+  }
+
+  .md-initial {
+    display: initial;
+  }
+
+  .md-flex-center {
+    align-items: center;
+  }
+
+  .md-hide-overflow {
+    overflow: hidden;
+  }
+
+  .md-flex-column {
+    flex-direction: column;
+  }
+}
+
+@include desktop {
+  .lg-width-50 {
+    width: 50%;
+  }
+
+  .lg-width-full {
+    width: 100%;
+  }
+
+  .lg-width-auto {
+    width: auto;
+  }
+
+  .lg-flex-start {
+    align-items: flex-start;
+  }
+
+  .lg-flex-center {
+    align-items: center;
+  }
+
+  .lg-flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg-text-center {
+    text-align: center;
+  }
+
+  .lg-text-left {
+    text-align: left;
+  }
+
+  .lg-flex {
+    display: flex;
+  }
+
+  .lg-flex-grow {
+    flex: 1 0 auto;
+  }
+
+  .lg-hide {
+    display: none;
+  }
+
+  .lg-inline {
+    display: inline;
+  }
+
+  .lg-initial {
+    display: initial;
+  }
+
+  .lg-block {
+    display: block;
+  }
+
+  .lg-inline-block {
+    display: inline-block;
+  }
+
+  .lg-table-cell {
+    display: table-cell;
+  }
+
+  .lg-inline-flex {
+    display: inline-flex;
+  }
+
+  .lg-flex-justify-center {
+    justify-content: center;
+  }
+
+  .lg-absolute {
+    position: absolute;
+  }
+
+  .lg-relative {
+    position: relative;
+  }
+
+  .lg-flex-row {
+    flex-direction: row;
+  }
+}

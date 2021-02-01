@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+@import "../../../styles/colors";
+
+.UserSearch-root {
+  display: flex;
+  justify-content: space-between;
+  padding: $space-2;
+}
+
+.UserSearch-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.UserSearch-input {
+  width: 100%;
+  padding: 10px 18px;
+  padding-right: 32px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  background-clip: padding-box;
+  transition: border 0.2s ease-in-out;
+  appearance: none;
+  background-color: #b3acc333;
+}
+
+.UserSearch-close {
+  position: absolute;
+  right: 2px;
+  color: $red;
+}

@@ -1,0 +1,7 @@
+export enum UserRoles {
+  'SUPERADMIN' = 'SUPERADMIN',
+  'ADMIN' = 'ADMIN',
+  'REVIEWER' = 'REVIEWER',
+  'COLLABORATOR' = 'COLLABORATOR',
+  'MEMBER' = 'MEMBER',
+}

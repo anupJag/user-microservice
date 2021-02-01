@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../../assets/fonts/Rubik-Light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$base-font-family: "Roboto";
+$medium-font-family: "Roboto-Medium";
+$ligth-font-family: "Roboto-Light";
+$content-header-font-family: "Rubik";

@@ -1,0 +1,47 @@
+image: node:latest-alpine
+
+before_script:
+  - cd microservices/user-service
+
+cache:
+  untracked: true
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+stages:
+  - analyze
+  - build
+  - test
+  - build:docker
+
+install_dependency:
+  stage: analyze
+  tags:
+    - audittool-pipeline
+  script:
+    - npm install
+
+build_application:
+  stage: build
+  tags:
+    - audittool-pipeline
+  script:
+    - npm run build
+
+test_application:
+  stage: test
+  tags:
+    - audittool-pipeline
+  script:
+    - npm run test
+
+build_docker_image_&_push_image:
+  image: docker:latest
+  stage: build:docker
+  tags:
+    - audittool-pipeline
+  script:
+    - docker build -t user-service:latest .
+    - docker tag user-service:latest audittoolusersvc.azurecr.io/user-service:latest
+    - docker push audittoolusersvc.azurecr.io/user-service:latest

@@ -1,0 +1,28 @@
+@import "../../../styles/colors";
+@import "../../../styles/variables";
+@import "../../../styles/fonts/font-family";
+
+.Button-root {
+  color: $black;
+  padding: 0.375rem $space-2;
+  font-size: 0.875rem;
+  min-width: $space-8;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: $base-font-family;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.Button-primary {
+  color: $white;
+  background-color: $purple;
+}
+
+.Button-default {
+  background-color: $gray;
+}

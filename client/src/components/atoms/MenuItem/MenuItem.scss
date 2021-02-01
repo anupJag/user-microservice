@@ -1,0 +1,25 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts/index";
+
+.divider {
+  @include font-h2-desktop($secondary);
+}
+
+.menu-item {
+  a {
+    @include font-h2-desktop($white);
+    text-decoration: none;
+    outline: none;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 1px;
+  }
+}
+
+.active {
+  background-color: $purple;
+  color: $white;
+  font-weight: 600;
+}

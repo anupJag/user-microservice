@@ -1,0 +1,40 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/variables";
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.Dialog-root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  width: 100%;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  @include desktop {
+    max-width: 37.5rem;
+  }
+}
+
+.Dialog-Header {
+  display: flex;
+  justify-content: space-between;
+  padding: $space-1 $space-2;
+  border-bottom: 1px solid #ccc;
+}
+
+.Dialog-Header-Title {
+  @include font-h2-desktop($black);
+  font-size: 1.25rem;
+}
+
+.Dialog-Header-Close {
+  color: $red;
+}
+
+.Dialog-Content {
+  padding: $space-1;
+}

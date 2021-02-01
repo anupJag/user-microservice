@@ -1,0 +1,18 @@
+@import '../../../styles/colors';
+
+.mainCanvas-wrapper {
+    background-color: $white;
+    border-top: 2px solid;
+}
+
+.mainCanvas-purple {
+    border-top-color: $purple;
+}
+
+.mainCanvas-deepPurple {
+    border-top-color: $dark-purple;
+}
+
+.mainCanvas-green {
+    border-top-color: $green;
+}

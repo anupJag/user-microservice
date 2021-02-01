@@ -1,0 +1,13 @@
+@import "../../../styles";
+
+.TabsButton-root {
+  padding-left: $space-2;
+  padding-right: $space-2;
+}
+
+.TabsButton-active {
+  border-bottom: 2px solid;
+  border-bottom-color: $purple;
+
+  transition: all 0.5ms ease-out;
+}

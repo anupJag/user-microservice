@@ -1,0 +1,9 @@
+@import "../../../styles/colors";
+
+.TableRow-root {
+  color: inherit;
+  display: table-row;
+  outline: 0;
+  vertical-align: middle;
+  border-bottom: 1px solid $gray;
+}

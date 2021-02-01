@@ -1,0 +1,17 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.pageLayout-wrapper {
+  height: 100%;
+}
+
+.pageLayout-header {
+  border-bottom: 1px solid $secondary;
+
+  .head {
+    @include font-h1-main-content($black);
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
